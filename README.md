@@ -9,7 +9,7 @@
 ***
 ### **- A. Install Node**
 
-1. Download and install node.js.
+1. Download and install node.js : https://nodejs.org/en/
 
 2. In terminal : `cd Exo-RESTAPIAJAX-jl` and install packages : 
 
