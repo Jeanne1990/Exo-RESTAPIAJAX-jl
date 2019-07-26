@@ -15,7 +15,7 @@
 
 ### **- B. Install Modules**
 
-2. In terminal : `cd Exo-RESTAPIAJAX-jl` and install packages : 
+2. In terminal : `cd Exo-RESTAPIAJAX-jl-master` and install packages : 
 
         npm install
 
@@ -31,7 +31,7 @@
 ### **- A. Start server**
 
 
-**In terminal, in current directory :** `Exo-RESTAPIAJAX-jl`  
+**In terminal, in current directory :** `Exo-RESTAPIAJAX-jl-master`  
 **use  :** `node api_jl.js` :
 
         node api_jl.js
