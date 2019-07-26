@@ -16,24 +16,6 @@
         npm install
 
 ---
-
-### **- B. Install Express**
-In terminal : `cd Exo-RESTAPIAJAX-jl` and install express : 
-
-        npm install express --save
-
-`--save` : to save dependencies in **package.json**
-
----
-
-### **- C. Install middlewares**
-1. In terminal : `cd Exo-RESTAPIAJAX-jl` and install morgan : 
-
-        npm install morgan --save-dev
-
-2. In terminal : `cd Exo-RESTAPIAJAX-jl` and install body-parser : 
-
-        npm install body-parser
         
 ***
 ***
