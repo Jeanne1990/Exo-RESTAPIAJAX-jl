@@ -1,0 +1,19 @@
+/* ---------------------------------------------- /*
+ * Color variable
+/* ---------------------------------------------- */
+
+$primary-color: #1AC4A3;
+$secondary-color: #58B6D0;
+$black-color:#000;
+
+/* ---------------------------------------------- /*
+ * Radius
+/* ---------------------------------------------- */
+
+$min-rad: 4px;
+
+/* ---------------------------------------------- /*
+ * Responsive Breackpoint
+/* ---------------------------------------------- */
+
+$breakpoints: ('verysmall':(max-width: 480px), 'small':(min-width: 480px), 'medium': (max-width: 767px), 'mediumlargemax':(max-width: 992px), 'mediumlarge':(min-width: 992px), 'minhuge':(max-width: 1200px), 'huge': (min-width: 1200px), );

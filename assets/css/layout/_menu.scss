@@ -1,0 +1,94 @@
+    #all__main__menu {
+        background-color: rgba(white, 0.25);
+    }
+    
+    nav.main__menu {
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    nav.main__menu ul li {
+        display: inline-flex;
+        width: 20%;
+        text-align: left;
+        justify-content: center;
+        vertical-align: middle;
+    }
+    
+    nav.main__menu ul li:first-child {
+        padding: 0;
+    }
+    
+    nav.main__menu ul li:last-child {
+        padding: 0;
+        text-align: right;
+        float: right;
+        display: flex;
+        justify-content: flex-end;
+        &::after {
+            content: "";
+            clear: both;
+        }
+    }
+    
+    nav.main__menu ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -webkit-transition: all 0.3s ease-in;
+        -ms-transition: all 0.3s ease-in;
+        line-height: 1.3;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+    
+    nav.main__menu ul li a.active {
+        color: $primary-color;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 2px;
+            background: $primary-color;
+            height: 50%;
+            bottom: 0px;
+            margin-left: -8px;
+            transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+        }
+    }
+    
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: tint($black-color, 20%) !important;
+        z-index: 10 !important;
+    }
+    /* ---------------------------------------------- /*
+ * Media Query
+/* ---------------------------------------------- */
+    
+    @include respond-to('mediumlargemax') {
+        nav.main__menu ul li:last-child {
+            display: none;
+        }
+        nav.main__menu ul li {
+            padding: 0;
+            width: 30%;
+        }
+        nav.main__menu {
+            padding: 0;
+        }
+        nav.main__menu ul li a {
+            font-size: 14px;
+        }
+    }

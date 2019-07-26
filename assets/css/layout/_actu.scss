@@ -1,0 +1,160 @@
+    /* ---------------------------------------------- /*
+ * Bloc actu accueil
+/* ---------------------------------------------- */
+    
+    .card__actu img.card__actu-img {
+        max-width: 100%;
+        width: 100%;
+        object-fit: cover;
+        max-height: 420px;
+        overflow: hidden;
+    }
+    
+    h2.card__actu-title {
+        display: flex;
+        padding: 10px 0;
+        background-color: transparent;
+        font-weight: 700;
+        font-size: 45px;
+        text-align: left;
+        min-height: 180px;
+        align-items: center;
+        color: tint($black-color, 20%);
+        &::after {
+            display: none;
+        }
+    }
+    
+    h3.card__actu-tag {
+        display: inline-block;
+        padding: 10px 15px;
+        margin: 5px 8px 5px 0;
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.2;
+        text-transform: uppercase;
+        font-weight: 200;
+        background-color: tint($black-color, 75%);
+        color: white;
+    }
+    
+    .card__une__button {
+        margin: 20px 0;
+    }
+    
+    p.card__actu-text {
+        display: flex;
+        min-height: 100px;
+        align-items: end;
+    }
+    
+    .sep__actu {
+        margin-bottom: 60px;
+        display: relative;
+        &:after {
+            content: '';
+            width: 50%;
+            height: 1px;
+            background: #eee;
+            position: absolute;
+            margin: 20px 0;
+            left: 50%;
+            transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            bottom: 0px;
+        }
+    }
+    /* ---------------------------------------------- /*
+ * RESPONSIVE
+/* ---------------------------------------------- */
+    
+    @media (min-width: 1500px) {
+        h2.card__actu-title {
+            min-height: 80px;
+        }
+        p.card__actu-text {
+            min-height: 60px;
+        }
+    }
+    /* ---------------------------------------------- /*
+ * Bloc Ajouter actu
+/* ---------------------------------------------- */
+    
+    #actu__ajouter__page {
+        width: 80%;
+        display: block;
+        margin: auto auto;
+        position: relative;
+        overflow: hidden;
+        background-color: #222;
+    }
+    
+    #actu__ajouter__page h1 {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: $primary-color;
+        font-size: 20px;
+        text-align: center;
+        line-height: 1.2;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: white;
+        &::after {
+            content: "";
+            width: 100%;
+            margin-left: 50px;
+            position: absolute;
+            background-color: tint($black-color, 80%);
+            height: 2px;
+            padding: 0 20px;
+            top: 22px;
+        }
+    }
+    
+    #form__actu-add {
+        margin-top: 50px;
+        width: 100%;
+    }
+    
+    #form__actu-add input[type="submit"] {
+        width: 100%;
+        min-width: 100%;
+    }
+    
+    #form__actu-add input[type="text"],
+    #form__actu-add input[type="file"],
+    #form__actu-add input[type="email"],
+    #form__actu-add input[type="date"],
+    #form__actu-add input[type="search"],
+    #form__actu-add input[type="tel"],
+    #form__actu-add input[type="url"],
+    #form__actu-add textarea {
+        color: tint($black-color, 30%);
+        font-weight: 600;
+        padding: 15px;
+        font-size: 16px;
+        border: none;
+        background: white;
+        border-radius: 4px;
+        margin: 10px 0 25px 0;
+        box-shadow: inset 1px 1px 1px tint($black-color, 80%);
+        width: 100%;
+    }
+    
+    #form__actu-add label {
+        color: white;
+    }
+    
+    @include respond-to('medium') {
+        #actu__ajouter__page {
+            width: 100%;
+        }
+        #actu__ajouter__page h1 {
+            &::after {
+                display: none;
+            }
+        }
+    }

@@ -1,0 +1,226 @@
+/*!
+ * Bootstrap Grid v4.3.1 proportion - Jl Edit
+ * 
+ */
+
+.container {
+    width: 100vw;
+    max-width: calc(100vw);
+    /* au maximum tu fais 100vw : une fois la largeur de l'ecran - 20px de marge. reglage responsive*/
+    max-height: calc(100vh);
+    box-sizing: border-box;
+}
+
+section {
+    display: block;
+    max-width: 100%;
+    padding: 30px 0;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper__80 {
+    width: 85%;
+}
+
+.flex {
+    display: flex;
+}
+
+.col-1,
+.col-2,
+.col-x1,
+.col-x2,
+.col-x3,
+.col-x4,
+.col-x5,
+.col-x6,
+.col-x7,
+.col-x8,
+.col-x9,
+.col-x10,
+.col-x11,
+.col-x12,
+.col,
+.col-responsive-1 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+
+/* col-6 in bootstrap */
+
+.col-2 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+
+/* col-12 in bootstrap */
+
+.col-1 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+
+/* col-4 in bootstrap */
+
+.col-3 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+
+/* col-3 in bootstrap */
+
+.col-4 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+
+/* col-2 in bootstrap */
+
+.col-6 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+.col-x1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+}
+
+.col-x2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+.col-x3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col-x4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.col-x5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+}
+
+.col-x7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+}
+
+.col-x8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+.col-x9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.col-x10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+}
+
+.col-x11 {
+    -ms-flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+}
+
+.col-reseau {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding: 0;
+}
+
+.offset-1 {
+    margin-left: 8.333333%;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.align-items-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+
+/* ---------------------------------------------- /*
+ * Media Query
+/* ---------------------------------------------- */
+
+@include respond-to('medium') {
+    .wrapper__80 {
+        width: 98%;
+    }
+    .col-responsive-1 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .col-responsive-2 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}

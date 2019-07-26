@@ -1,0 +1,167 @@
+    /* ---------------------------------------------- /*
+ * Bloc une accueil
+/* ---------------------------------------------- */
+    
+    #all__une__bloc {
+        padding-bottom: 50px;
+    }
+    
+    .card__left__wrap {
+        position: relative;
+    }
+    
+    .card__right__wrap {
+        position: relative;
+    }
+    
+    .card__une img.card__une-img {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .card__une h4.card__une-date {
+        position: absolute;
+        display: inline-block;
+        padding: 2%;
+        background-color: $primary-color;
+        font-size: 1.8vw;
+        text-align: center;
+        line-height: 1.2;
+        text-transform: uppercase;
+        font-weight: 200;
+        color: white;
+        left: 3vw;
+        top: 1vw;
+    }
+    
+    .card__une h2.card__une-title {
+        position: absolute;
+        display: block;
+        width: 30%;
+        padding: 10px 15px;
+        margin: 5px;
+        font-size: 4vw;
+        text-align: left;
+        font-weight: 800;
+        background-color: transparent;
+        color: white;
+        left: 5vw;
+        top: 5vw;
+        line-height: 1;
+        &::after {
+            display: none;
+        }
+    }
+    
+    .sep__une {
+        margin-bottom: 60px;
+        display: relative;
+        &:after {
+            content: '';
+            width: 50%;
+            height: 1px;
+            background: #ddd;
+            position: absolute;
+            margin: 20px 0;
+            left: 50%;
+            transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+        }
+    }
+    /* ---------------------------------------------- /*
+ * RESPONSIVE
+/* ---------------------------------------------- */
+    
+    @include respond-to('medium') {
+        .card__une h2.card__une-title {
+            font-size: 10vw;
+            top: 10vw;
+        }
+        .card__une h4.card__une-date {
+            font-size: 3vw;
+            left: 6vw;
+            top: 3vw;
+        }
+    }
+    /* ---------------------------------------------- /*
+ * Bloc Ajouter une
+/* ---------------------------------------------- */
+    
+    #une__ajouter__page {
+        width: 80%;
+        display: block;
+        margin: auto auto;
+        position: relative;
+        overflow: hidden;
+        background-color: #222;
+    }
+    
+    #une__ajouter__page h1 {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: $primary-color;
+        font-size: 20px;
+        text-align: center;
+        line-height: 1.2;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: white;
+        &::after {
+            content: "";
+            width: 100%;
+            margin-left: 50px;
+            position: absolute;
+            background-color: tint($black-color, 80%);
+            height: 2px;
+            padding: 0 20px;
+            top: 22px;
+        }
+    }
+    
+    #form__une-add {
+        margin-top: 50px;
+        width: 100%;
+    }
+    
+    #form__une-add input[type="submit"] {
+        width: 100%;
+        min-width: 100%;
+    }
+    
+    #form__une-add input[type="text"],
+    #form__une-add input[type="file"],
+    #form__une-add input[type="email"],
+    #form__une-add input[type="date"],
+    #form__une-add input[type="search"],
+    #form__une-add input[type="tel"],
+    #form__une-add input[type="url"],
+    #form__une-add textarea {
+        color: tint($black-color, 30%);
+        font-weight: 600;
+        padding: 15px;
+        font-size: 16px;
+        border: none;
+        background: white;
+        border-radius: 4px;
+        margin: 10px 0 25px 0;
+        box-shadow: inset 1px 1px 1px tint($black-color, 80%);
+        width: 100%;
+    }
+    
+    #form__une-add label {
+        color: white;
+    }
+    
+    @include respond-to('medium') {
+        #une__ajouter__page {
+            width: 100%;
+        }
+        #une__ajouter__page h1 {
+            &::after {
+                display: none;
+            }
+        }
+    }

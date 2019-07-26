@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0" />
+    <meta name="description" content="Exercice">
+    <meta name="author" content="Jeanne Laloyau">
+    <link rel="icon" type="image/png" href="" />
+    <title>Jeanne Laloyau | Exercice</title>
+    <link href="assets/css/style.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="backround__parallax-img">
+            <img src="/assets/img/item-4.jpg" alt="img-cover">
+        </div>
+
+        <!-- Begin header -->
+        <header>
+            <div class="backround__header-img">
+                <img src="/assets/img/header-img.png" alt="img-cover">
+            </div>
+            <!-- section edit -->
+            <section id="edit__page">
+                <div class="row wrapper__80">
+                    <div class="col-1">
+                        <div class="button button__edit" id="button__edit">Editer la page</div>
+                        <!-- section all_forms -->
+                        <section id="all_forms">
+                            <div class="row wrapper__80">
+                                <div class="col-6">
+                                    <form id="form__actu-add" action="/api/v1/site/actu/ajouter" method="post">
+                                        <p>
+                                            <input type="submit" value="Ajouter actu" />
+                                        </p>
+                                    </form>
+                                </div>
+                                <!-- .col -->
+                                <div class="col-6">
+                                    <form id="form__une-add" action="/api/v1/site/une/ajouter" method="post">
+                                        <p>
+                                            <input type="submit" value="Ajouter Une" />
+                                        </p>
+                                    </form>
+                                </div>
+                                <!-- .col -->
+                            </div>
+                            <!-- .row -->
+                        </section>
+                    </div>
+                    <!-- .col -->
+                </div>
+                <!-- .row -->
+                <!-- .section all_forms -->
+            </section>
+            <!-- .section edit -->
+            <!-- section modif -->
+            <section id="modif" class="no-padding">
+            </section>
+            <!-- .section modif -->
+            <!-- section error -->
+            <section id="error" class="no-padding">
+            </section>
+            <!-- .section error -->
+            <!-- section rs -->
+            <section id="rs__menu">
+                <div class="row center-align-items wrapper__80">
+                    <div class="col-2 col-responsive-1">
+                        <img class="header__logo" src="/assets/img/logo.png" alt="logo">
+                    </div>
+                    <!-- .col -->
+                    <div class="col-2 col-responsive-1">
+                        <ul class="header__menu-rs">
+                            <li>Rejoignez-nous sur : </li>
+                            <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- .col -->
+                </div>
+                <!-- .row -->
+            </section>
+            <!-- .section rs -->
+            <!-- section main menu -->
+            <section id="all__main__menu">
+                <div class=" wrapper__80">
+                    <div class="col-1">
+                        <nav class="main__menu" id="main__nav">
+                            <ul>
+                                <li><a class="active" href="#">Découvrir la photo</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">Toutes les actualités sur la photographie youpi ! </a></li>
+                                <li>
+
+                                    <form id="form__search" class="form__search" action="action.php" method="">
+                                        <input type="search" placeholder="Recherche.." name="form__search-input" id="form__search-input">
+                                        <button type="submit" name="form__search-submit" id="form__search-submit"><i class="fa fa-search"></i></button>
+                                    </form>
+
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- .col-->
+                </div>
+                <!-- .row-->
+            </section>
+            <!-- .section main menu -->
+            <!-- div banniere__header -->
+            <sdiv id="banniere__header">
+                <div class="row wrapper__80">
+                    <div class="col-1">
+                        <h1><span>Le premier site </span> <br> des photographes indépendants</h1>
+                    </div>
+                    <!-- .col-->
+                </div>
+                <!-- .row-->
+    </div>
+    <!-- .div banniere__header -->
+    </header>
+    <!-- .End header -->
+
+    <!-- UNE -->
+    <section id="all__une__bloc">
+        <div class="row wrapper__80">
+            <div class="col-1">
+                <div class="container__title">
+                    <h2>A la une</h2>
+                </div>
+            </div>
+            <!-- .col-->
+        </div>
+        <!-- .row-->
+        <div class="row wrapper__80" id="une"></div>
+    </section>
+    <!-- .row -->
+    <!-- .UNE -->
+    <!-- BANNIERE -->
+    <section id="acc__banniere">
+        <div class="row wrapper__80">
+            <!--<img src="/assets/img/item-1.png" alt="" id="bg__img__acc__ban">-->
+            <div class="col-1">
+                <h3><span class="ban__title__1">Je suis</span ><span class="ban__title__2">passionnée</span></h3>
+            </div>
+            <!-- .col -->
+        </div>
+        <!-- .row -->
+    </section>
+    <!-- .BANNIERE -->
+    <!-- ACTU -->
+    <section id="all__actu__bloc">
+        <div class="row wrapper__80">
+            <div class="col-1">
+                <div class="container__title">
+                    <h2>Actualités</h2>
+                </div>
+            </div>
+            <!-- .col-->
+        </div>
+        <!-- .row-->
+        <div class="row wrapper__80" id="actu">
+        </div>
+        <!-- .row -->
+    </section>
+    <!-- .ACTU-->
+    <!-- Jeffries -->
+    <section id="Jeffries">
+        <div class="row wrapper__80">
+            <div class="col-1">
+                <div class="container__title">
+                    <h2>Lee Jeffries</h2>
+                </div>
+            </div>
+            <!-- .col-->
+        </div>
+        <!-- .row-->
+        <div class="row wrapper__80">
+            <!-- col -->
+            <div class="col-1 col__hexa-1 col-responsive-2">
+                <!-- jeffries 1 -->
+                <div class="item__vignette__hexagone">
+                    <figure class="item__effect__hover__hexagone">
+                        <img src="/assets/img/portrait.jpg">
+                        <figcaption class="vignette__info__hexagone">
+                            <h5>titre</h5>
+                            <p>sous titre</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- .jeffries 1 -->
+                <!-- jeffries 2 -->
+                <div class="item__vignette__hexagone">
+                    <figure class="item__effect__hover__hexagone">
+                        <img src="/assets/img/portrait-2.jpg">
+                        <figcaption class="vignette__info__hexagone">
+                            <h5>titre</h5>
+                            <p>sous titre</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- .jeffries 2 -->
+                <!-- jeffries 3 -->
+                <div class="item__vignette__hexagone">
+                    <figure class="item__effect__hover__hexagone">
+                        <img src="/assets/img/portrait-3.jpg">
+                        <figcaption class="vignette__info__hexagone">
+                            <h5>titre</h5>
+                            <p>sous titre</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- .jeffries 3 -->
+                <!-- jeffries 4 -->
+                <div class="item__vignette__hexagone">
+                    <figure class="item__effect__hover__hexagone">
+                        <img src="/assets/img/portrait-4.jpg">
+                        <figcaption class="vignette__info__hexagone">
+                            <h5>titre</h5>
+                            <p>sous titre</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- .jeffries 4 -->
+                <!-- jeffries 5 -->
+                <div class="item__vignette__hexagone">
+                    <figure class="item__effect__hover__hexagone">
+                        <img src="/assets/img/portrait-5.jpg">
+                        <figcaption class="vignette__info__hexagone">
+                            <h5>titre</h5>
+                            <p>sous titre</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- .jeffries 5 -->
+            </div>
+            <!-- .col -->
+            <div class="col-1 col__hexa-2 col-responsive-2">
+                <!-- jeffries 1 -->
+                <div class="item__vignette__hexagone">
+                    <figure class="item__effect__hover__hexagone">
+                        <img src="/assets/img/portrait-6.jpg">
+                        <figcaption class="vignette__info__hexagone">
+                            <h5>titre</h5>
+                            <p>sous titre</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- .jeffries 1 -->
+                <!-- jeffries 2 -->
+                <div class="item__vignette__hexagone">
+                    <figure class="item__effect__hover__hexagone">
+                        <img src="/assets/img/portrait-7.jpg">
+                        <figcaption class="vignette__info__hexagone">
+                            <h5>titre</h5>
+                            <p>sous titre</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- .jeffries 2 -->
+                <!-- jeffries 3 -->
+                <div class="item__vignette__hexagone">
+                    <figure class="item__effect__hover__hexagone">
+                        <img src="/assets/img/portrait-8.jpg">
+                        <figcaption class="vignette__info__hexagone">
+                            <h5>titre</h5>
+                            <p>sous titre</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- .jeffries 3 -->
+                <!-- jeffries 4 -->
+                <div class="item__vignette__hexagone">
+                    <figure class="item__effect__hover__hexagone">
+                        <img src="/assets/img/portrait-9.jpg">
+                        <figcaption class="vignette__info__hexagone">
+                            <h5>titre</h5>
+                            <p>sous titre</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- .jeffries 4 -->
+            </div>
+            <!-- .col -->
+        </div>
+        <!-- .row -->
+    </section>
+    <!-- .jeffries -->
+
+
+    <!-- MORE -->
+    <section id="more">
+        <div class="row wrapper__80">
+            <div class="col-2 col-responsive-1">
+                <h3>Documentation</h3>
+                <div class="row">
+                    <div class="col-x2 no-padding">
+                        <a href="#"><img src="/assets/img/icon-jl-doc.png" alt="img"></a>
+                    </div>
+                    <!-- .col -->
+                    <div class="col-x9 flex">
+                        <a href="#" class="para__important">Télécharger le dossier de candidature au statut national étudiant entrepreneur</a>
+                    </div>
+                    <!-- .col -->
+                </div>
+                <!-- .row -->
+                <div class="row">
+                    <div class="col-x2 no-padding">
+                        <a href="#"><img src="/assets/img/icon-jl-doc.png" alt="img"></a>
+                    </div>
+                    <!-- .col -->
+                    <div class="col-x9 flex">
+                        <a href="#" class="para__important">Télécharger le dossier de candidature au prix 2016</a>
+                    </div>
+                    <!-- .col -->
+                </div>
+                <!-- .row -->
+            </div>
+            <!-- .col -->
+            <div class="col-2 col-responsive-1">
+                <h3>Newsletter</h3>
+                <form id="form__newsletter" action="/newsletter.php" method="post" class="flex">
+                    <p>
+                        <input type="email" name="email" id="email" placeholder="EMAIL" required />
+                        <input type="text" name="name" id="name" placeholder="NOM" required />
+                        <input type="text" name="first" id="first" placeholder="PRENOM" required />
+                        <input type="submit" value="S'INSCRIRE" />
+                    </p>
+                </form>
+            </div>
+            <!-- .col -->
+        </div>
+        <!-- .row -->
+    </section>
+    <!-- .MORE -->
+    <!-- FOOTER__1 -->
+    <section id="footer__1">
+        <div class="row wrapper__80">
+            <div class="col-reseau">
+                <div class="card_rs">
+                    <a href=""><i class="fa fa-facebook-f"></i> facebook
+                    </a>
+                </div>
+            </div>
+            <!-- .col -->
+            <div class="col-reseau">
+                <div class="card_rs">
+                    <a href=""><i class="fa fa-twitter"></i> Twitter
+                    </a>
+                </div>
+            </div>
+            <!-- .col -->
+            <div class="col-reseau">
+                <div class="card_rs">
+                    <a href=""><i class="fa fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+            <!-- .col -->
+            <div class="col-reseau">
+                <div class="card_rs">
+                    <a href=""><i class="fa fa-youtube"></i> Youtube
+                    </a>
+                </div>
+            </div>
+            <!-- .col -->
+            <div class="col-reseau">
+                <div class="card_rs">
+                    <a href=""><i class="fa fa-tumblr"></i>Tumbler
+                    </a>
+                </div>
+            </div>
+            <!-- .col -->
+        </div>
+        <!-- .col -->
+        <!-- .row -->
+    </section>
+    <!-- .FOOTER__1 -->
+
+    <!-- MAIN__FOOTER -->
+    <section id="main__footer">
+        <div class="row wrapper__80">
+            <div class="col-4 col-responsive-1">
+                <div class="espace__info">
+                    <p class="info">Soutenez la photo</p>
+                    <a class="button button__white">Faire un don</a>
+                </div>
+            </div>
+            <!-- .col -->
+            <div class="col-4 col-responsive-1">
+                <div class="menu__initiative">
+                    <ul>
+                        <li>
+                            <h4>Initiative portée par :</h4>
+                        </li>
+                        <li>
+                            <a href="#"><img src="/assets/img/cestfaux.jpg" alt="img"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- .col -->
+            <div class="col-4 col-responsive-1">
+                <div class="menu__rubrique">
+                    <ul>
+                        <li>
+                            <h4>Rubriques :</h4>
+                        </li>
+                        <li><a href="#">Tarifs</a></li>
+                        <li>
+                            <a href="#">Confidentialité</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <Cookies</a>
+                        </li>
+                        <li>
+                            <a href="#">A propos</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- .col -->
+            <div class="col-4 col-responsive-1">
+                <div class="menu__video">
+                    <ul>
+                        <li>
+                            <h4>Youtube :</h4>
+                        </li>
+                        <li><video src="#" poster="/assets/img/youtube-poster.jpg" width="300"></video></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- .col -->
+        </div>
+        <!-- .row -->
+    </section>
+    <!-- .MAIN__FOOTER__1 -->
+    </div>
+    <!-- .end container -->
+    <!-- scripts -->
+    <script src="site.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,66 @@
+/* ---------------------------------------------- /*
+ * General
+/* ---------------------------------------------- */
+
+body {
+    font-family: 'barlow', helvetica, sans-serif;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+section {
+    padding: 15px 15px;
+    background-color: white;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* ---------------------------------------------- /*
+ * Alignement
+/* ---------------------------------------------- */
+
+.center-align-items {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.align-self-center {
+    -ms-flex-item-align: center !important;
+    align-self: center !important;
+}
+
+
+/* ---------------------------------------------- /*
+ * Buttons
+/* ---------------------------------------------- */
+
+.button {
+    color: $primary-color;
+    padding: 10px;
+    border-radius: $min_rad;
+    border: 2px solid $primary-color;
+    text-transform: uppercase;
+    display: inline-block;
+    max-width: 200px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    &:hover {
+        background-color: $primary-color;
+        color: white;
+    }
+}

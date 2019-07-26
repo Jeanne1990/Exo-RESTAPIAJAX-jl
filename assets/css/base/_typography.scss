@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+/* ---------------------------------------------- /*
+ * Font variable
+/* ---------------------------------------------- */
+
+$main-font: ('Barlow',
+'Helvetica',
+sans-serif);
+
+/* ---------------------------------------------- /*
+ * Titles
+/* ---------------------------------------------- */
+
+.container__title {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 30px 0;
+}
+
+h2 {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: $primary-color;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    &::after {
+        content: "";
+        width: 100%;
+        margin-left: 50px;
+        position: absolute;
+        background-color: tint($black-color, 80%);
+        height: 2px;
+        padding: 0 20px;
+        top: 22px;
+    }
+}
+
+h3 {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: $secondary-color;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+}
+
+p {
+    line-height: 1.8;
+    color: tint($black-color, 30%);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+
+/* ---------------------------------------------- /*
+ * Responsive
+/* ---------------------------------------------- */
+
+@include respond-to('medium') {
+    p {
+        line-height: 2.2;
+        color: tint($black-color, 30%);
+        font-weight: 500;
+        font-size: 18px;
+    }
+}

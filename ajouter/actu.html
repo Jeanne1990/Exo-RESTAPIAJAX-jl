@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0" />
+    <meta name="description" content="Exercice - ajouter une actualité">
+    <meta name="author" content="Jeanne Laloyau">
+    <link rel="icon" type="image/png" href="" />
+    <link href="/assets/css/style.css" rel="stylesheet" media="screen">
+    <title>Jeanne Laloyau | Exercice</title>
+</head>
+<style>
+    body {
+        background-color: #222;
+    }
+</style>
+
+
+<body>
+    <section id="actu__ajouter__page">
+        <div class="row wrapper__80">
+
+            <div class="col-1">
+
+                <h1>Ajouter des article d'actualités</h1>
+            </div>
+            <!-- .col -->
+            <div class="row">
+                <div class="col-1">
+                    <form id="form__actu-add" action="/api/v1/site/actu/ajouter" method="post">
+                        <p>
+                            <label for="img">Nouvelle image</label>
+                            <input type="text" name="image" id="image" autofocus required value="item-1.jpg" placeholder="item-1.jpg" />
+                        </p>
+                        <p>
+                            <label for="text">Titre</label>
+                            <input type="text" name="title" id="title" placeholder="Titre" required />
+                        </p>
+                        <p>
+                            <label for="date">Ajouter des tags</label>
+                            <input type="text" name="tags" id="tags" required placeholder="photos,dessin" />
+                        </p>
+                        <p>
+                            <label for="text">Texte</label>
+                            <textarea id="text" name="text" rows="5" cols="33" placeholder="Votre texte ici..."></textarea>
+                        </p>
+                        <p>
+                            <label for="text">Lien de l'article</label>
+                            <input type="url" name="link" id="link" placeholder="https://jeannelaloyau.com" value="https://" required />
+                        </p>
+                        <p>
+                            <input type="submit" />
+                        </p>
+                    </form>
+                    <p>* Bien remplir les champs obligatoires</p>
+                </div>
+                <!-- .col -->
+
+            </div>
+            <!-- .row -->
+        </div>
+        <!-- .row -->
+    </section>
+
+    <script src="site.js"></script>
+</body>
+
+</html>

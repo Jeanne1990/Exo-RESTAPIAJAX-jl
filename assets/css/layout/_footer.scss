@@ -1,0 +1,128 @@
+/* ---------------------------------------------- /*
+ * Footer RS
+/* ---------------------------------------------- */
+
+#footer__1 {
+    text-align: center;
+    background-color: $secondary-color;
+    padding: 0;
+}
+
+#footer__1 a {
+    text-decoration: none;
+    color: white;
+    padding: 30px 0;
+    margin: 0;
+    width: 100%;
+    transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+        background-color: shade($secondary-color, 20%);
+    }
+}
+
+#footer__1 .fa {
+    font-size: 50px;
+    border: 1px solid white;
+    border-radius: 4px;
+    width: 60px;
+    height: 68px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+
+/* ---------------------------------------------- /*
+ * Media Query
+/* ---------------------------------------------- */
+
+@include respond-to('mediumlargemax') {
+    #footer__1 .fa {
+        font-size: 20px;
+        width: 40px;
+        height: 48px;
+        margin-right: 5px;
+    }
+}
+
+@include respond-to('medium') {
+    #footer__1 a {
+        display: flex;
+        flex-direction: column;
+    }
+    #footer__1 .fa {
+        margin: 0 0 10px 0;
+    }
+}
+
+
+/* ---------------------------------------------- /*
+ * Footer menu
+/* ---------------------------------------------- */
+
+#main__footer {
+    background-color: tint($black-color, 20%);
+    color: white;
+    padding: 50px 0;
+    position: relative;
+}
+
+#main__footer p {
+    color: white;
+    font-size: 46px;
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+#main__footer .button {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+#main__footer h4 {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 2;
+    margin-bottom: 30px;
+    &:after {
+        content: "";
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        background: white;
+        z-index: 12;
+        display: block;
+    }
+}
+
+#main__footer .menu__rubrique li:first-child {
+    margin: 0px 0;
+}
+
+#main__footer .menu__rubrique li {
+    margin: 10px 0;
+}
+
+#main__footer .menu__rubrique a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    &:hover {
+        color: $primary-color;
+    }
+}
