@@ -7,9 +7,11 @@
 ## **1. Download & install**
 ***
 ***
-### **- A. Install Node**
+### **- A. Download project & Install Node**
 
-1. Download and install node.js : https://nodejs.org/en/
+1. Github > Clone or download : download zip, unzip.
+
+2. Download and install node.js : https://nodejs.org/en/
 
 ### **- B. Install Modules**
 
