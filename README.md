@@ -9,13 +9,14 @@
 ***
 ### **- A. Download project & Install Node**
 
-1. Github > Clone or download : download zip, unzip.
+1. Github > Clone or download : download zip, unzip or `git clone https://github.com/Jeanne1990/Exo-RESTAPIAJAX-jl.git`
+        
 
 2. Download and install node.js : https://nodejs.org/en/
 
 ### **- B. Install Modules**
 
-2. In terminal : `cd Exo-RESTAPIAJAX-jl-master` and install packages : 
+2. In terminal : `cd Exo-RESTAPIAJAX-jl` and install packages : 
 
         npm install
 
@@ -31,7 +32,7 @@
 ### **- A. Start server**
 
 
-**In terminal, in current directory :** `Exo-RESTAPIAJAX-jl-master`  
+**In terminal, in current directory :** `Exo-RESTAPIAJAX-jl`
 **use  :** `node api_jl.js` :
 
         node api_jl.js
