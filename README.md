@@ -30,7 +30,7 @@
 
 
 **In terminal, in current directory :** `Exo-RESTAPIAJAX-jl`  
-**use  :** `node node api_jl.js` :
+**use  :** `node api_jl.js` :
 
         node api_jl.js
 
